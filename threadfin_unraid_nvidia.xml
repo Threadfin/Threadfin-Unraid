@@ -7,12 +7,26 @@
   <DonateLink>https://github.com/sponsors/Fyb3roptik/dashboard</DonateLink>
   <DonateText>If you like my work please consider Donating.</DonateText>
 </Maintainer>
-<Template>
+<Container>
   <Name>Threadfin w/ Nvidia</Name>
   <Repository>fyb3roptik/threadfin:latest-nvidia</Repository>
   <Registry>https://hub.docker.com/r/fyb3roptik/threadfin/</Registry>
   <Network>bridge</Network>
-
+  <Network>media.server</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Threadfin/Threadfin/issues</Support>
+  <Project>https://github.com/Threadfin/Threadfin</Project>
+  <Overview/>
+  <Category>MediaServer:Video</Category>
+  <WebUI>http://[IP]:[PORT:34400]/web</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <Requires/>
   <Config Name="Port" Target="THREADFIN_PORT" Default="34400" Mode="env" Description="Threadfin Port" Type="Port" Display="always" Required="true" Mask="false">34400</Config>
   <Config Name="Threadfin Home" Target="THREADFIN_HOME" Default="/home/threadfin" Mode="env" Description="Home directory for Threadfin" Type="Path" Display="always" Required="true" Mask="false">/home/threadfin</Config>
   <Config Name="Threadfin Config" Target="THREADFIN_CONF" Default="/home/threadfin/conf" Mode="env" Description="Configuration directory for Threadfin" Type="Path" Display="always" Required="true" Mask="false">/home/threadfin/conf</Config>
@@ -23,5 +37,4 @@
   <Config Name="Threadfin User" Target="THREADFIN_USER" Default="threadfin" Mode="env" Description="Username for Threadfin" Type="Variable" Display="always" Required="false" Mask="false">threadfin</Config>
   <Config Name="Threadfin Debug" Target="THREADFIN_DEBUG" Default="0" Mode="env" Description="Set to 1 to enable debug mode. Default is 0 (debug mode off)." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <Config Name="Timezone" Target="TZ" Default="America/New_York" Mode="env" Description="Timezone for the container" Type="Variable" Display="always" Required="true" Mask="false">America/New_York</Config>
-
-</Template>
+</Container>
