@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Template>
+  <Name>Threadfin</Name>
+  <Repository>fyb3roptik/threadfin:latest</Repository>
+  <Registry>https://hub.docker.com/r/fyb3roptik/threadfin/</Registry>
+  <Network>bridge</Network>
+
+  <Config Name="Port" Target="THREADFIN_PORT" Default="34400" Mode="env" Description="Threadfin Port" Type="Port" Display="always" Required="true" Mask="false">34400</Config>
+  <Config Name="Threadfin Home" Target="THREADFIN_HOME" Default="/home/threadfin" Mode="env" Description="Home directory for Threadfin" Type="Path" Display="always" Required="true" Mask="false">/home/threadfin</Config>
+  <Config Name="Threadfin Config" Target="THREADFIN_CONF" Default="/home/threadfin/conf" Mode="env" Description="Configuration directory for Threadfin" Type="Path" Display="always" Required="true" Mask="false">/home/threadfin/conf</Config>
+  <Config Name="Threadfin Temp" Target="THREADFIN_TEMP" Default="/tmp/threadfin" Mode="env" Description="Temporary directory for Threadfin" Type="Path" Display="always" Required="false" Mask="false">/tmp/threadfin</Config>
+  <Config Name="Threadfin Cache" Target="THREADFIN_CACHE" Default="/home/threadfin/cache" Mode="env" Description="Cache directory for Threadfin" Type="Path" Display="always" Required="false" Mask="false">/home/threadfin/cache</Config>
+  <Config Name="Threadfin UID" Target="THREADFIN_UID" Default="31337" Mode="env" Description="User ID for Threadfin" Type="Variable" Display="always" Required="false" Mask="false">31337</Config>
+  <Config Name="Threadfin GID" Target="THREADFIN_GID" Default="31337" Mode="env" Description="Group ID for Threadfin" Type="Variable" Display="always" Required="false" Mask="false">31337</Config>
+  <Config Name="Threadfin User" Target="THREADFIN_USER" Default="threadfin" Mode="env" Description="Username for Threadfin" Type="Variable" Display="always" Required="false" Mask="false">threadfin</Config>
+  <Config Name="Threadfin Debug" Target="THREADFIN_DEBUG" Default="0" Mode="env" Description="Set to 1 to enable debug mode. Default is 0 (debug mode off)." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Timezone" Target="TZ" Default="America/New_York" Mode="env" Description="Timezone for the container" Type="Variable" Display="always" Required="true" Mask="false">America/New_York</Config>
+
+</Template>
