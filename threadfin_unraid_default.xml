@@ -1,4 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
+<Maintainer>
+  <Icon>https://avatars.githubusercontent.com/u/339131?v=4</Icon>
+  <Profile>
+    I maintain Threadfin as well as Kernel Media Server
+  </Profile>
+  <DonateLink>https://github.com/sponsors/Fyb3roptik/dashboard</DonateLink>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+</Maintainer>
 <Template>
   <Name>Threadfin</Name>
   <Repository>fyb3roptik/threadfin:latest</Repository>
